@@ -56,6 +56,7 @@ pub fn solve_part2(input: &[Pair]) -> usize {
         .cloned()
         .filter(Pair::is_partially_contained)
         .count()
+
 }
 
 #[cfg(test)]
@@ -73,7 +74,7 @@ mod tests {
         assert_eq!(2, solve_part1(&generator(provided)));
         assert_eq!(
             475,
-            solve_part1(&generator(include_str!("../input/2022/day3.txt")))
+            solve_part1(&generator(include_str!("../input/2022/day4.txt")))
         );
     }
 
@@ -88,7 +89,7 @@ mod tests {
         assert_eq!(4, solve_part2(&generator(provided)));
         assert_eq!(
             825,
-            solve_part2(&generator(include_str!("../input/2022/day3.txt")))
+            solve_part2(&generator(include_str!("../input/2022/day4.txt")))
         );
     }
 }
